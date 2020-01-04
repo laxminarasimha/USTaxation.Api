@@ -1,0 +1,14 @@
+D:\Git\USTaxation.Api\bin\Debug\netcoreapp2.2\USTaxation.Api.deps.json
+D:\Git\USTaxation.Api\bin\Debug\netcoreapp2.2\USTaxation.Api.runtimeconfig.json
+D:\Git\USTaxation.Api\bin\Debug\netcoreapp2.2\USTaxation.Api.runtimeconfig.dev.json
+D:\Git\USTaxation.Api\bin\Debug\netcoreapp2.2\USTaxation.Api.dll
+D:\Git\USTaxation.Api\bin\Debug\netcoreapp2.2\USTaxation.Api.pdb
+D:\Git\USTaxation.Api\obj\Debug\netcoreapp2.2\USTaxation.Api.csprojAssemblyReference.cache
+D:\Git\USTaxation.Api\obj\Debug\netcoreapp2.2\USTaxation.Api.csproj.CoreCompileInputs.cache
+D:\Git\USTaxation.Api\obj\Debug\netcoreapp2.2\USTaxation.Api.RazorAssemblyInfo.cache
+D:\Git\USTaxation.Api\obj\Debug\netcoreapp2.2\USTaxation.Api.RazorAssemblyInfo.cs
+D:\Git\USTaxation.Api\obj\Debug\netcoreapp2.2\USTaxation.Api.AssemblyInfoInputs.cache
+D:\Git\USTaxation.Api\obj\Debug\netcoreapp2.2\USTaxation.Api.AssemblyInfo.cs
+D:\Git\USTaxation.Api\obj\Debug\netcoreapp2.2\USTaxation.Api.RazorTargetAssemblyInfo.cache
+D:\Git\USTaxation.Api\obj\Debug\netcoreapp2.2\USTaxation.Api.dll
+D:\Git\USTaxation.Api\obj\Debug\netcoreapp2.2\USTaxation.Api.pdb
