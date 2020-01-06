@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
@@ -41,7 +42,7 @@ namespace USTaxation.Api.Helpers
             while (reader.NextResult());
         }
 
-        public static List<string> ToReaderList(this IDataReader reader)
+        public static List<string> ToList(this IDataReader reader)
         {
             var result = new List<string>();
             do
@@ -54,6 +55,30 @@ namespace USTaxation.Api.Helpers
             }
             while (reader.NextResult());
             return result;
+        }
+
+        public static IEnumerable<Dictionary<string, object>> ToDictionary(this IDataReader reader)
+        {
+            var results = new List<Dictionary<string, object>>();
+            var cols = new List<string>();
+            for (var i = 0; i < reader.FieldCount; i++)
+                cols.Add(reader.GetName(i));
+
+            while (reader.Read())
+            {
+                var result = new Dictionary<string, object>();
+                foreach (var col in cols)
+                    result.Add(col, reader[col]);
+                results.Add(result);
+            }
+
+            return results;
+        }
+
+        public static string ToJson(this IDataReader reader)
+        {
+            var results = reader.ToDictionary();
+            return JsonConvert.SerializeObject(results, Formatting.Indented);
         }
     }
 }

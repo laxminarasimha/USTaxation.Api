@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using USTaxation.Api.Attributes;
 using USTaxation.Api.Data;
 using USTaxation.Api.Helpers;
 using USTaxation.Api.Models;
@@ -29,7 +24,7 @@ namespace USTaxation.Api.Controllers
 
 
         [HttpGet("[action]")]
-        public IActionResult ExecuteRule(Rule rule)
+        public string ExecuteRule(Rule rule)
         {
             try
             {
@@ -37,7 +32,7 @@ namespace USTaxation.Api.Controllers
                 {
                     if (string.IsNullOrEmpty(rule.ComparisonPredicate))
                     {
-                        return BadRequest();
+                        return "Bad request";
                     }
                     else if (string.IsNullOrEmpty(rule.ComparisonValue))
                     {
@@ -53,13 +48,13 @@ namespace USTaxation.Api.Controllers
                     }
                     _db.Database.OpenConnection();
                     var reader = command.ExecuteReader();
-                                       
-                    return Ok(reader.ToReaderList());
+
+                    return reader.ToJson();
                 }
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return ex.Message;
             }            
         }        
     }
