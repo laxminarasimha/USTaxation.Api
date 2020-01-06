@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\USTaxation.Api\\USTaxation.Api.csproj": {}
+    "D:\\Development\\USTaxation\\USTaxation.Api\\USTaxation.Api.csproj": {}
   },
   "projects": {
-    "D:\\Git\\USTaxation.Api\\USTaxation.Api.csproj": {
+    "D:\\Development\\USTaxation\\USTaxation.Api\\USTaxation.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\USTaxation.Api\\USTaxation.Api.csproj",
+        "projectUniqueName": "D:\\Development\\USTaxation\\USTaxation.Api\\USTaxation.Api.csproj",
         "projectName": "USTaxation.Api",
-        "projectPath": "D:\\Git\\USTaxation.Api\\USTaxation.Api.csproj",
-        "packagesPath": "C:\\Users\\chait\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\USTaxation.Api\\obj\\",
+        "projectPath": "D:\\Development\\USTaxation\\USTaxation.Api\\USTaxation.Api.csproj",
+        "packagesPath": "C:\\Users\\murth\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\USTaxation\\USTaxation.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\chait\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\murth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
