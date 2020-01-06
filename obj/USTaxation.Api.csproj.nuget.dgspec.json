@@ -1,36 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\USTaxation.Api\\USTaxation.Api.csproj": {}
+    "D:\\Development\\USTaxation\\USTaxation.Api\\USTaxation.Api.csproj": {}
   },
   "projects": {
-    "D:\\Git\\USTaxation.Api\\USTaxation.Api.csproj": {
+    "D:\\Development\\USTaxation\\USTaxation.Api\\USTaxation.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\USTaxation.Api\\USTaxation.Api.csproj",
+        "projectUniqueName": "D:\\Development\\USTaxation\\USTaxation.Api\\USTaxation.Api.csproj",
         "projectName": "USTaxation.Api",
-        "projectPath": "D:\\Git\\USTaxation.Api\\USTaxation.Api.csproj",
-        "packagesPath": "C:\\Users\\chait\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\USTaxation.Api\\obj\\",
+        "projectPath": "D:\\Development\\USTaxation\\USTaxation.Api\\USTaxation.Api.csproj",
+        "packagesPath": "C:\\Users\\murth\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\USTaxation\\USTaxation.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\chait\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\murth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netcoreapp2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netcoreapp2.1": {
             "projectReferences": {}
           }
         },
@@ -41,12 +39,12 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netcoreapp2.1": {
           "dependencies": {
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )",
+              "version": "[2.1.1, )",
               "autoReferenced": true
             },
             "Microsoft.AspNetCore.Razor.Design": {
@@ -57,7 +55,7 @@
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )",
+              "version": "[2.1.0, )",
               "autoReferenced": true
             }
           },
