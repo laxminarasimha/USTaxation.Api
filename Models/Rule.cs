@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using USTaxation.Api.Helpers;
 
 namespace USTaxation.Api.Models
 {
@@ -10,7 +11,7 @@ namespace USTaxation.Api.Models
     {       
         public string ComparisonPredicate { get; set; }
         public ExpressionType ComparisonOperator { get; set; }
-        public string AggregateOperator { get; set; }
+        public AggregateFunction AggregateFunction { get; set; }
         public string ComparisonValue { get; set; }
     }
 }

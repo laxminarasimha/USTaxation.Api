@@ -38,13 +38,13 @@ namespace USTaxation.Api.Controllers
                     {
                         command.CommandText = string.Format("Select * from {0}", rule.ComparisonPredicate);
                     }
-                    else if (string.IsNullOrEmpty(rule.AggregateOperator))
+                    else if (string.IsNullOrEmpty(rule.AggregateFunction.ToString()) || rule.AggregateFunction == AggregateFunction.None)
                     {
                         command.CommandText = string.Format("Select {0} from {1}", rule.ComparisonValue, rule.ComparisonPredicate);
                     }
                     else
                     {
-                        command.CommandText = string.Format("Select {0}({1}) AS 'Aggregate{1}' from {2}", rule.AggregateOperator, rule.ComparisonValue, rule.ComparisonPredicate);
+                        command.CommandText = string.Format("Select {0}({1}) AS 'Aggregate{1}' from {2}", rule.AggregateFunction.ToString(), rule.ComparisonValue, rule.ComparisonPredicate);
                     }
                     _db.Database.OpenConnection();
                     var reader = command.ExecuteReader();
