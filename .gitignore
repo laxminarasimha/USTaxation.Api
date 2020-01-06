@@ -4,3 +4,5 @@
 
 /.vs/USTaxation.Api/v16
 /.vs
+/bin/Debug/netcoreapp2.1
+/obj/Debug/netcoreapp2.1
