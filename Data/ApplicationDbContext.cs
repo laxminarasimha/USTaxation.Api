@@ -18,5 +18,7 @@ namespace USTaxation.Api.Data
         public DbSet<UserModel> Users { get; set; }
 
         public DbSet<PayloadPointer> PayloadPointers { get; set; }
+
+        public DbSet<CompanyAggregateDataModel> COMPANY_AGGREGATE_DATA { get; set; }
     }
 }
